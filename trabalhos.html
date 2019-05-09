@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Agência UM</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style_trabalho.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/aos.css" type="text/css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/aos.js"></script>
+         
+</head>
+<body>
+    
+   <script>
+    AOS.init();
+   </script>
+   
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+              <a class="navbar-brand" href="index.html"><img style="height: 25px" src="assets/img/logo.svg"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="trabalhos.html">Trabalhos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+        
+    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+     
+    <div id="trabalhos">
+        <div class="container">
+           <div class="row">
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_01">
+                       <h1>01</h1>
+                       <p>Bullying</p>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_02">
+                       <h1>02</h1>
+                       <p>Trabalho Infantil</p>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_03">
+                       <h1>03</h1>
+                       <p>Capas CBN</p>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_04">
+                       <h1>04</h1>
+                       <p>Soundwave</p>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_05">
+                       <h1>05</h1>
+                       <p>Eu tenho um sonho</p>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_06">
+                       <h1>06</h1>
+                       <p>Encontre um tempo</p>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_07">
+                       <h1>07</h1>
+                       <p>A Real Coffee Break</p>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div data-aos="fade-down" class="trabalho_08">
+                       <h1>08</h1>
+                       <p>Porque você assistiu</p>
+                   </div>
+               </div>
+           </div>              
+        </div>
+    </div>   
+        
+      <footer>
+           <div class="container">
+               <div class="row justify-content-center">
+                   <div id="rodape" class="col-md-12">
+                       <h3 data-aos="fade-down">Todos os dias uma nova agência. Toda hora de portas abertas para você. Entre em contato e aproveite para marcar um cafezinho aqui com a gente.<br> Com vista, claro.</h3>
+                       <h1 data-aos="fade-down">ola@agenciaum.ag</h1>
+                       <hr>
+                   </div>
+               </div>
+           </div>
+    </footer>
+    
+     <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+    </script>
+    
+</body>
+</html>
